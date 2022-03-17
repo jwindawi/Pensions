@@ -1,0 +1,527 @@
+\documentclass{beamer}\usetheme[titleformat=allcaps]{metropolis} % Use metropolis theme
+\usepackage[T1]{fontenc}
+\setbeamerfont{caption}{size=\scriptsize}
+\usepackage{caption}
+\usepackage{color}
+\captionsetup[table]{belowskip=-1pt}
+\captionsetup[figure]{belowskip=-8pt, aboveskip=1pt}
+\usepackage[sfdefault]{FiraSans}
+\usepackage[nomap]{FiraMono}\title{\textmd{Governance, financialization \& institutional fragility:\\public sector pensions in the U.S.}}\date{\today}\author{A. Jason Windawi}\institute{Department of Sociology\\Princeton University}
+\begin{document}\maketitle
+
+\begin{frame}{\textmd{Overview}}	\begin{enumerate}
+		\item Motivation
+		\item Approach
+		\item Variables and Data
+		\item Results
+		\item Next Steps
+		\end{enumerate} 
+\end{frame}
+
+\begin{frame}{\textmd{Motivation: Institutional Fragility}}
+Public sector pensions are an institutionalized source of socioeconomic stability in the U.S. 
+\begin{scriptsize}
+\begin{itemize}
+	\item Result of 20th Century settlement between labor and capital (Dobbin 1992, Dobbin \& Boychuk 1996, Skocpol 1992), now support millions of households
+	\item Demographic pressures make retirement income increasingly important
+\end{itemize}
+\end{scriptsize}
+They are also central to the financialization of the U.S. economy
+\begin{scriptsize}
+\begin{itemize}
+	\item 1974 passage of ERISA laid groundwork for vast investments in capital markets
+	\item \$3.3 trillion in assets (US Census 2014)
+\end{itemize}
+\end{scriptsize}
+Yet they are also increasingly a source of political instabilities
+\begin{scriptsize}
+\begin{itemize}
+	\item Funding gaps are becoming a political problem at the state and local levels (e.g. Illinois, Detroit)	
+\end{itemize}
+\end{scriptsize}
+\end{frame}
+
+\begin{frame}{\textmd{Motivation: Institutional Fragility}}
+\begin{small}
+Public pensions began the century in general good health...
+\end{small} 
+\begin{figure}
+\caption*{\textbf{Density of Funding Gaps, 2001}} 	
+    \includegraphics[width=\textwidth]{fundinggap01}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{\textmd{Motivation: Institutional Fragility}}
+\begin{small}
+...but their fiscal health has deteriorated since then
+\end{small} 
+\begin{figure}
+\caption*{\textbf{Density of Funding Gaps, 2001-2013}} 	
+    \includegraphics[width=\textwidth]{fundinggap}
+    \end{figure}
+    \end{frame}
+
+\begin{frame}{\textmd{Motivation: Financialization and Governance}}
+Studying public pensions can extend sociological insights into financialization
+\begin{scriptsize}
+\begin{itemize}
+\item Established work focuses largely on processes operating at the state (Krippner 2005, 2011) and/or field levels (Davis 2009, Fligstein 2001), with an emphasis on profit-driven firms
+\item Leaves unexamined the use of financial markets as a source of accumulation (Krippner 2005, 2011) for the state itself
+\end{itemize}
+\end{scriptsize}
+Public pensions introduce several new dimensions of governance, at the intersection of political, organizational, economic and fiscal sociology
+\begin{scriptsize}
+\begin{itemize}
+\item Using markets to reconcile conflicting "contracts" with citizens/taxpayers (Martin 2012) and employees creates a complex and contradictory institutional environment (Scott and Meyer 1991)
+\end{itemize}
+\end{scriptsize}
+
+\end{frame}
+
+
+\begin{frame}{\textmd{Motivating Governance: Heterogeneous Trajectories}}
+\begin{small}
+Variability in outcomes suggests variability in governance
+\end{small}
+\begin{figure}
+\caption*{\textbf{Quartiles of Funding Status, by Year}} 	
+	\includegraphics[width=\textwidth]{riverall}
+	\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{\textmd{Motivating Governance: Heterogeneous Trajectories}}
+\begin{small}
+Quartile membership changes significantly over time...
+\end{small}	
+\begin{figure}
+\caption*{\textbf{Quartiles of Funding Status, by Year}} 	
+\includegraphics[width=\textwidth]{riverstart}
+\end{figure}
+\end{frame}
+
+\begin{frame}{\textmd{Motivating Governance: Heterogeneous Trajectories}}
+\begin{small}
+...creating time-dependent outcomes
+\end{small}
+\begin{figure}
+\caption*{\textbf{Quartiles of Funding Status, by Year}} 	
+\includegraphics[width=\textwidth]{riverfinish}
+\end{figure}
+\end{frame}
+
+\begin{frame}{\textmd{Questions and Approach}}
+Why is this important institution faring so poorly? What are the sources of heterogeneity in outcomes? \\
+\bigskip
+\underline{Model 1: Estimating Funding Gap}
+\begin{scriptsize}
+\begin{itemize}
+\item Use 2001 to 2013 panel data in random effects prediction of Funding Gap per capita (linking pension health to political risk) based on various governance, investment, fiscal and other variables
+\end{itemize}
+\end{scriptsize}
+\underline{Model 2: Estimating Funding Gap, with Volatility}
+\begin{scriptsize}
+\begin{itemize}
+\item Use 2013 data only for OLS estimate of Funding Gap per capita, incorporating investment volatility
+\end{itemize}
+\end{scriptsize}
+\underline{Model 3: Estimating Financialization}
+\begin{scriptsize}
+\begin{itemize}
+\item Use 2001 to 2013 panel data in random effects prediction of Financialization based on various governance, investment, fiscal and other variables
+\end{itemize}
+\end{scriptsize}
+\end{frame}
+
+
+\begin{frame}{\textmd{Variables and Data}}
+	\begin{table}
+\begin{tiny}
+\begin{center}
+\caption*{\textbf{Variables and Data Sources}}
+\begin{tabular}{l c l l}
+\hline
+\textbf{Variable} & Hypothesized & Definition & Source \\
+\hline
+\textbf{Funding Gap} & & (Assets-Liabilities)/Popn & CRR, US Census\\ [0.3ex]
+\textbf{Financialization} & $-$ & Investment Income/Contributions & CRR \\ [0.3ex]
+\textbf{Volatility} & $+$ & SD of 1-yr Returns & CRR \\[0.3ex]
+\textbf{Performance Gap} & $+$ & Expected Rtn - 5yr Rtn & CRR \\[0.3ex]
+\textbf{\% of Req Contribution} & $-$ & Empl. Contribution/Actuarial Rec. & CRR\\[0.3ex]
+\textbf{Benefit Generosity} & $+$ & Avge Benefit/Median Income & CRR, US Census \\[0.3ex]
+\textbf{Public Debt} & $+$ & Public Debt/Popn & US Census \\ [0.3ex]
+\textbf{Interest Cost} & $+$ & Public Interest/General Revenues & US Census \\[0.3ex]
+\textbf{Plan Demographics} & $-$ & Workers/Beneficiaries & CRR \\[0.3ex]
+\hline
+\multicolumn{4}{l}{CRR is the Center for Retirement Research at Boston College}\\
+\multicolumn{4}{l}{US Census is the Annual Census of Local and State Governments}\\
+\end{tabular}
+\end{center}
+\end{tiny}
+\end{table}
+\end{frame}
+
+
+\begin{frame}{\textmd{Results 1: Per Capita Funding Gap}}
+\begin{table}
+\begin{tiny}
+\begin{center}
+\caption*{\textbf{Predicting Funding Gap Per Capita}\\\tiny{Random Effects Panel Models with Arellano-Robust Errors} \\ Full Sample and Thirds by 2013 Funded Status} 
+\begin{tabular}{l c c c c }
+\hline
+ & \textbf{Full Sample} & Best Third & Middle Third & Worst Third \\
+\hline
+\textbf{Financialization}      & $\mathbf{-11.111^{**}}$    & $-4.814^{*}$     & $-13.504^{**}$   & \color{gray}$Null$          \\
+\hspace*{0.25cm} \emph{(lag)}& $(3.619)$         &        &         &          \\ [0.4ex]
+\textbf{Performance Gap}    & $\mathbf{35.418^{***}}$  & $9.737^{**}$   & $33.563^{***}$ & $62.366^{***}$  \\
+\hspace*{0.25cm} \emph{(lag)}& $(459.026)$       & & &      \\[0.4ex]
+\textbf{\% Contributed of Req.}       & $-18.930$        & $-152.426^{***}$ & $-93.859^{*}$    & \color{gray}$Null$         \\
+\hspace*{0.25cm} \emph{(lag)} &  $(53.246)$        &  &   &        \\[0.4ex]
+\textbf{Benefit Generosity}    & $\mathbf{1308.740^{**}}$   & $474.044^{*}$    & $1256.074^{***}$ & \color{gray}$Null$         \\
+\hspace*{0.25cm} \emph{(lag)} & $(450.344)$       &   &  &    \\[0.4ex]
+\textbf{Interest Cost}            & $\mathbf{-5.444^{**}}$   & \color{gray}$Null$  & $-40.317^{***}$ & \color{gray}$Null$        \\
+                    & $(203.256)$       &        &      &        \\[0.4ex]
+\textbf{Interest Cost}    & $\mathbf{-3.726^{*}}$    & $-1.357^{*}$   & \color{gray}$Null$         & \color{gray}$Null$        \\
+\hspace*{0.25cm} \emph{(lag)} & $(145.162)$       & & &        \\[0.4ex]
+\textbf{Public Debt}     & $\mathbf{494.477^{***}}$   & \color{gray}$Null$        & $155.152^{*}$    & $910.518^{**}$    \\
+\hspace*{0.25cm} \emph{(lag)} & $(136.345)$       &        &  &       \\[0.4ex]
+\textbf{Demographics} & $-129.964$        & \color{gray}$Null$       & $-277.719^{***}$ & $-633.106^{**}$   \\
+\hspace*{0.25cm} \emph{(lag)}&    $(85.915)$     &        &  &      \\[0.2ex]
+\hline
+N           & 1320              & 431               & 454              & 433                \\
+R$^2$               & 0.216             & 0.153             & 0.276            & 0.287              \\
+Adj. R$^2$          & 0.211             & 0.136             & 0.263            & 0.273              \\
+\hline
+\multicolumn{5}{l}{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}\\
+\end{tabular}
+\end{center}
+\end{tiny}
+\end{table}
+\end{frame}
+
+\begin{frame}{\textmd{Results 2: 2013 Only}}
+	 \begin{figure}
+\caption*{\textbf{Estimating Funding Gap Per Capita}\\ \tiny{OLS Models with Influentials, Outliers Removed\\2013 Data Only}} 
+            \includegraphics[width=\textwidth]{ols2}
+      \end{figure}
+\end{frame}
+
+\begin{frame}{\textmd{Results 3: Financialization}}
+\vspace*{-1.5mm}
+\begin{table}
+\begin{tiny}
+\caption*{\textbf{Predicting Financialization}\\\tiny{Random Effects Panel Models with Arellano-Robust Errors} \\ Full Sample and Thirds by 2013 Funded Status} 
+\begin{center}
+\begin{tabular}{l c c c c }
+\hline
+ & \textbf{Full Sample} & Best Third & Middle Third & Worst Third \\
+\hline
+\textbf{Funding Gap} & $\mathbf{-0.0003^{**}}$   & $-0.0006^{*}$   & \color{gray}$Null$         & \color{gray}$Null$  \\ 
+\hspace*{0.25cm} \emph{(lag)} & $(0.0001)$       &  & &        \\ [0.4ex]
+\textbf{Performance Gap}    & $-0.6566$        & \color{gray}$Null$         & \color{gray}$Null$         & \color{gray}$Null$           \\
+\hspace*{0.25cm} \emph{(lag)}& $(2.6004)$       &  & &         \\[0.4ex]
+\textbf{Benefit Generosity}    & $1.0189$ 		& $2.4355^{*}$    & \color{gray}$Null$         & \color{gray}$Null$           \\
+\hspace*{0.25cm} \emph{(lag)}& $(0.5593)$       &  & &        \\[0.4ex]
+\textbf{Interest Cost}            & $0.0067$         & \color{gray}$Null$        & \color{gray}$Null$   & \color{gray}$Null$   \\
+                    & $(0.2077)$       &  & &         \\[0.4ex]
+\textbf{Interest Cost}  & $-0.0176$        & \color{gray}$Null$         & \color{gray}$Null$         & \color{gray}$Null$          \\
+\hspace*{0.25cm} \emph{(lag)} & $(0.2096)$       & & &         \\[0.4ex]
+\textbf{Public Debt}     & $\mathbf{0.2777^{***}}$   & \color{gray}$Null$         & \color{gray}$Null$  & \color{gray}$Null$           \\
+\hspace*{0.25cm} \emph{(lag)} & $(0.0800)$       &  & &     \\[0.4ex]
+\textbf{1-yr Return}                & $\mathbf{0.265^{***}}$  & $0.273^{***}$ & $0.278^{***}$  & $0.246^{***}$   \\
+\hspace*{0.25cm} \emph{(lag)}& $(1.7834)$       &  & &         \\[0.4ex]
+\textbf{Demographics} & $\mathbf{0.2521^{**}}$    & $0.3470^{***}$  & \color{gray}$Null$         & \color{gray}$Null$          \\
+\hspace*{0.25cm} \emph{(lag)}& $(0.0838)$       &  & &         \\[0.4ex]
+\textbf{Investment Risk}    & $-0.0644$        & \color{gray}$Null$         & \color{gray}$Null$          & \color{gray}$Null$          \\
+\hspace*{0.25cm} \emph{(lag)}& $(0.8040)$       &  & &         \\[0.4ex]
+\hline
+N           & 1311           & 427             & 453            & 430            \\
+R$^2$               & 0.610          & 0.622           & 0.644          & 0.572          \\
+Adj. R$^2$          & 0.607          & 0.614           & 0.637          & 0.562          \\
+\hline
+\multicolumn{5}{l}{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}
+\end{tabular}
+\end{center}
+\end{tiny}
+\end{table}
+\end{frame}
+
+
+\begin{frame}{\textmd{Summarizing Results}}
+\begin{table}
+\begin{tiny}
+\begin{center}
+\caption*{Summarizing Main Effects} 
+\begin{tabular}{l c c c}
+\hline 
+ & DV$=$Funding Gap & DV$=$2013 Funding Gap & DV$=$Financialization \\
+ & RE Panel & OLS & RE Panel \\
+ \hline
+\textbf{Financialization}    		  & \scriptsize{\color{red}\textbf{$-**$}} & \scriptsize{\color{red}\textbf{$-**$}}\\
+\hspace*{0.25cm} \emph{(lag)} &  & \\[0.4ex]
+\textbf{Funding Gap} 		&		  & 			& \scriptsize{\color{red}\textbf{$-**$}} \\
+\hspace*{0.25cm} \emph{(lag)} &  			&     \\[0.4ex]
+\textbf{Performance Gap}    & \scriptsize{\color{teal}\textbf{$+***$}} & \color{gray}$Null$  & \color{gray}$Null$     \\
+\hspace*{0.25cm} \emph{(lag)} &  &  \\[0.4ex]
+\textbf{Benefit Generosity}    & \scriptsize{\color{teal}\textbf{$+**$}}   &  \scriptsize{\color{teal}\textbf{$+***$}} & \color{gray}$Null$ 	\\
+\hspace*{0.25cm} \emph{(lag)} &   &   \\[0.4ex]
+\textbf{Interest Cost}            & \scriptsize{\color{red}\textbf{$-**$}}  & \scriptsize{\color{red}\textbf{$-**$}} &  \color{gray}$Null$ \\
+                    &  &  \\[0.4ex]
+\textbf{Interest Cost}    & \scriptsize{\color{red}\textbf{$-*$}}    &   \color{gray}$Null$       \\
+\hspace*{0.25cm} \emph{(lag)} & &   \\[0.4ex]
+\textbf{Public Debt}     & \scriptsize{\color{teal}\textbf{$+***$}} & \scriptsize{\color{teal}\textbf{$+***$}}  &   \scriptsize{\color{teal}\textbf{$+***$}} \\
+\hspace*{0.25cm} \emph{(lag)} &   &   \\[0.4ex]
+\textbf{Demographics} & \color{gray}$Null$ & \color{gray}$Null$ & \scriptsize{\color{teal}\textbf{$+**$}}   \\
+\hspace*{0.25cm} \emph{(lag)}&  &   \\[0.4ex]
+\textbf{1-yr Return} & &  & \scriptsize{\color{teal}\textbf{$+***$}}   \\
+\hspace*{0.25cm} \emph{(lag)} &  &  \\[0.4ex]
+\textbf{Investment Risk}  & &  & \color{gray}$Null$ \\
+\hspace*{0.25cm} \emph{(lag)}&  &  \\[0.2ex]
+\hline
+N & 1320 & 87 & 1311 \\
+\hline
+\multicolumn{3}{l}{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}
+\end{tabular}
+\end{center}
+\end{tiny}
+\end{table}
+\end{frame}
+
+
+\begin{frame}{\textmd{Preliminary Conclusions}}
+\begin{itemize}
+	\item Financialization is double-edged sword, with \emph{returns} reducing funding gaps but \emph{volatility} increasing them 
+	\item The benefits also appear to be limited to funds with stronger investment performance
+	\item Public debt and generous benefits strongly predict both pension underfunding and greater financialization
+	\item Variation by end-point outcomes implies a role for governance to be explored further
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{\textmd{Next Steps: Refining Data and Analysis}}
+\begin{itemize}
+	\item Investigate interest cost negative effect
+	\item Expand data set to include fiscal 2014 and 2015
+	\item Include broader set of pensions by using multilevel/mixed models
+	\item Examine heterogeneity by using mixed model quantile regression
+	\item Perhaps model other aspects of decision-making and financialization
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\textmd{Thank you!}
+\end{frame}
+
+\begin{frame}
+\textmd{APPENDIX}
+\end{frame}
+
+\begin{frame}{\textmd{Descriptives}}
+\begin{table}
+\begin{tiny}
+  \caption{Descriptive Statistics: Full CRR Sample, 2001 - 2013} 
+\begin{center} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\hline 
+Variable & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\
+\hline  
+Funding Gap (pc) & 1,382 & 900 & 1107 & $-$3,106 & 7,393 \\ 
+\hspace*{0.25cm} \emph{Actuarial Assets} &  & 20,870,736 & 32,071,286 & 190,116.7 & 282,991,008 \\ 
+\hspace*{0.25cm} \emph{Actuarial Liabilities} &  & 25,377,734 & 37,286,229 & 254,255 & 375,019,000 \\ 
+\hspace*{0.25cm} \emph{UAAL (Gap)} &  & 4,499,323 & 8,423,337 & $-$17,705,000 & 93,091,000 \\ 
+Financialization & 1,383 & 1.668 & 4.162 & $-$47.589 & 28.576 \\ 
+\% Contribution & 1,384 & 0.946 & 0.386 & 0.000 & 8.307 \\ 
+Generosity & 1,391 & 0.446 & 0.179 & 0.000 & 1.091 \\ 
+\hspace*{0.25cm} \emph{Avge. Benefit} &  & 21,608 & 9,256 & 1,126 & 62,040 \\ 
+\hspace*{0.25cm} \emph{Local HH Income} &  & 47,941 & 7,139 & 29,359 & 71,836 \\ 
+Performance Gap & 1,343 & 0.024 & 0.036 & $-$0.177 & 0.097 \\ 
+\hspace*{0.25cm} \emph{Discount/Expectation} &  & 0.079 & 0.004 & 0.055 & 0.090 \\ 
+\hspace*{0.25cm} \emph{5-yr Return} &  & 0.055 & 0.036 & $-$0.015 & 0.257 \\ 
+Ideology & 1,391 & 0.101 & 0.808 & $-$1.479 & 1.431 \\ 
+Public Debt (pc) & 1,391 & 5,910 & 3,166 & 49 & 17,588 \\ 
+Public Interest Cost & 1,391 & 0.053 & 0.035 & 0.005 & 0.317 \\ 
+\hspace*{0.25cm} \emph{Interest Payments} &  & 1,973,690 & 2,963,891 & 6,850 & 19,391,998 \\ 
+\hspace*{0.25cm} \emph{Public Revenue} &  & 40,052,895 & 54,663,962 & 305,352 & 345,681,364 \\ 
+Active Risk & 1,376 & 0.628 & 0.082 & 0.121 & 0.970 \\ 
+\hspace*{0.25cm} \emph{Equity Allocation} & & 0.545 & 0.111 & 0.000 & 0.780 \\ 
+\hspace*{0.25cm} \emph{Alternatives Allocation} & & 0.079 & 0.088 & 0.000 & 0.566 \\ 
+Demographics & 1,383 & 1.919 & 0.972 & 0.016 & 14.906 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\end{tiny}
+\end{table} 
+
+\end{frame}
+
+\begin{frame}{\textmd{Funding Quantiles, per capita}}
+    \includegraphics[width=\textwidth]{gapquants}
+\end{frame}
+
+\begin{frame}{\textmd{Predicting Per Capita Funding Gap}}
+\begin{table}
+\begin{tiny}
+\begin{center}
+\caption{Random Effects Panel Models with Arellano-Robust Errors \\ Full Sample and Thirds by 2013 Funded Status} 
+\begin{tabular}{l c c c c }
+\hline
+ & Full Sample & Best Third & Middle Third & Worst Third \\
+\hline
+Financialization      & $-11.111^{**}$    & $-4.814^{*}$     & $-13.504^{**}$   & $-9.348$          \\
+\hspace*{0.25cm} \emph{(lag)}& $(3.619)$         & $(2.219)$        & $(4.792)$        & $(9.166)$         \\ [0.4ex]
+Performance Gap    & $3541.760^{***}$  & $973.731^{**}$   & $3356.341^{***}$ & $6236.624^{***}$  \\
+\hspace*{0.25cm} \emph{(lag)}& $(459.026)$       & $(335.146)$      & $(577.574)$      & $(1021.305)$      \\[0.4ex]
+\% Contributed of Req.       & $-18.930$         & $-152.426^{***}$ & $-93.859^{*}$    & $233.114$         \\
+\hspace*{0.25cm} \emph{(lag)} & $(53.246)$        & $(38.889)$       & $(44.752)$       & $(164.571)$       \\[0.4ex]
+Benefit Generosity    & $1308.740^{**}$   & $474.044^{*}$    & $1256.074^{***}$ & $613.063$         \\
+\hspace*{0.25cm} \emph{(lag)} & $(450.344)$       & $(220.669)$      & $(301.170)$      & $(1134.765)$      \\[0.4ex]
+Interest Cost            & $-544.409^{**}$   & $-108.698$       & $-403.166^{***}$ & $-574.149$        \\
+                    & $(203.256)$       & $(93.060)$       & $(102.112)$      & $(493.936)$       \\[0.4ex]
+Interest Cost    & $-372.562^{*}$    & $-135.668^{*}$   & $31.589$         & $-885.997$        \\
+\hspace*{0.25cm} \emph{(lag)} & $(145.162)$       & $(61.957)$       & $(113.653)$      & $(592.793)$       \\[0.4ex]
+Public Debt     & $494.477^{***}$   & $147.156$        & $155.152^{*}$    & $910.518^{**}$    \\
+\hspace*{0.25cm} \emph{(lag)} & $(136.345)$       & $(75.687)$       & $(71.599)$       & $(289.461)$       \\[0.4ex]
+Demographics & $-129.964$        & $-36.911$        & $-277.719^{***}$ & $-633.106^{**}$   \\
+\hspace*{0.25cm} \emph{(lag)}& $(85.915)$        & $(19.865)$       & $(55.476)$       & $(218.863)$       \\[0.2ex]
+\hline
+N           & 1320              & 431               & 454              & 433                \\
+R$^2$               & 0.216             & 0.153             & 0.276            & 0.287              \\
+Adj. R$^2$          & 0.211             & 0.136             & 0.263            & 0.273              \\
+\hline
+\multicolumn{5}{l}{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}\\
+\end{tabular}
+\end{center}
+\end{tiny}
+\end{table}
+\end{frame}
+
+\begin{frame}{\textmd{Predicting Financialization}}
+\begin{table}
+\begin{tiny}
+\begin{center}
+\caption{Random Effects Panel Models with Arellano-Robust Errors \\ Full Sample and Thirds by 2013 Funded Status} 
+\begin{tabular}{l c c c c }
+\hline
+ & Full Sample & Best Third & Middle Third & Worst Third \\
+\hline
+Funding Gap & $-0.0003^{**}$   & $-0.0006^{*}$   & $-0.0002$        & $-0.0003$ \\ 
+\hspace*{0.25cm} \emph{(lag)} & $(0.0001)$       & $(0.0003)$      & $(0.0008)$       & $(0.0001)$        \\ [0.4ex]
+Performance Gap    & $-0.6566$        & $2.5400$        & $-3.5464$        & $0.4629$          \\
+\hspace*{0.25cm} \emph{(lag)}& $(2.6004)$       & $(6.0450)$      & $(6.0039)$       & $(2.1134)$        \\[0.4ex]
+Benefit Generosity    & $1.0189$ 		& $2.4355^{*}$    & $-0.6718$        & $0.8006$          \\
+\hspace*{0.25cm} \emph{(lag)}& $(0.5593)$       & $(1.0838)$      & $(0.9919)$       & $(0.6572)$        \\[0.4ex]
+Interest Cost            & $0.0067$         & $-0.4217$       & $0.2663$         & $0.6877$          \\
+                    & $(0.2077)$       & $(0.3725)$      & $(0.2280)$       & $(0.5361)$        \\[0.4ex]
+Interest Cost  & $-0.0176$        & $0.2546$        & $-0.1958$        & $-0.5946$         \\
+\hspace*{0.25cm} \emph{(lag)} & $(0.2096)$       & $(0.2757)$      & $(0.3284)$       & $(0.5579)$        \\[0.4ex]
+Public Debt     & $0.2777^{***}$   & $0.3619$        & $0.1780^{\odot}$ & $0.2359$          \\
+\hspace*{0.25cm} \emph{(lag)} & $(0.0800)$       & $(0.2307)$      & $(0.0942)$       & $(0.2310)$        \\[0.4ex]
+1-yr Return                & $26.5189^{***}$  & $27.2574^{***}$ & $27.7956^{***}$  & $24.5770^{***}$   \\
+\hspace*{0.25cm} \emph{(lag)}& $(1.7834)$       & $(2.3273)$      & $(3.4430)$       & $(3.3566)$        \\[0.4ex]
+Demographics & $0.2521^{**}$    & $0.3470^{***}$  & $-0.1123$        & $0.2192$          \\
+\hspace*{0.25cm} \emph{(lag)}& $(0.0838)$       & $(0.0750)$      & $(0.2777)$       & $(0.2287)$        \\[0.4ex]
+Investment Risk    & $-0.0644$        & $0.2563$        & $0.0846$         & $-0.7316$         \\
+\hspace*{0.25cm} \emph{(lag)}& $(0.8040)$       & $(1.7075)$      & $(1.7643)$       & $(0.9670)$        \\[0.4ex]
+\hline
+N           & 1311           & 427             & 453            & 430            \\
+R$^2$               & 0.610          & 0.622           & 0.644          & 0.572          \\
+Adj. R$^2$          & 0.607          & 0.614           & 0.637          & 0.562          \\
+\hline
+\multicolumn{5}{l}{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}
+\end{tabular}
+\end{center}
+\end{tiny}
+\end{table}
+\end{frame}
+
+\begin{frame}{\textmd{Financialization and Reflexivity}}
+\begin{table}
+\begin{tiny}
+\begin{center}
+\caption{Random Effects Panel Models with Arellano-Robust Errors} 
+\begin{tabular}{l c c}
+\hline
+ & DV$=$Funding Gap & DV$=$Financialization \\
+ \hline
+Financialization    		  & $-11.111^{**}$    & \\
+\hspace*{0.25cm} \emph{(lag)} & $(3.619)$ & \\
+Funding Gap 					  & 			& $-0.0003^{**}$ \\
+\hspace*{0.25cm} \emph{(lag)} &  			& $(0.0001)$    \\
+Performance Gap    & $3541.760^{***}$  & $-0.6566$     \\
+\hspace*{0.25cm} \emph{(lag)} & $(459.026)$  & $(2.6004)$ \\
+Benefit Generosity    & $1308.740^{**}$   &  $1.0189$ 	\\
+\hspace*{0.25cm} \emph{(lag)} & $(450.344)$  & $(0.5593)$  \\
+Interest Cost            & $-544.409^{**}$   & $0.0067$  \\
+                    & $(203.256)$ & $(0.2077)$  \\
+Interest Cost    & $-372.562^{*}$    &   $-0.0176$       \\
+\hspace*{0.25cm} \emph{(lag)} & $(145.162)$  &  $(0.2096)$ \\
+Public Debt     & $494.477^{***}$   &   $0.2777^{***}$ \\
+\hspace*{0.25cm} \emph{(lag)} & $(136.345)$  &  $(0.0800)$ \\
+Demographics & $-129.964$  & $0.2521^{**}$   \\
+\hspace*{0.25cm} \emph{(lag)}& $(85.915)$ & $(0.0838)$   \\
+1-yr Return & $NA$ & $26.5189^{***}$    \\
+\hspace*{0.25cm} \emph{(lag)} &  & $(1.7834)$ \\
+Investment Risk  & $NA$  & $-0.0644$ \\
+\hspace*{0.25cm} \emph{(lag)}&  & $(0.8040)$ \\
+\hline
+N & 1320 & 1311 \\
+\hline
+\multicolumn{3}{l}{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}
+\end{tabular}
+\end{center}
+\end{tiny}
+\end{table}
+\end{frame}
+
+\begin{frame}{\textmd{Results: OLS}}
+\begin{table}
+\begin{tiny}
+\caption{OLS Regression Using 2013 Data}
+\begin{center}
+\begin{tabular}{lcc}
+\hline
+ & Original & Less Outliers \\
+\hline
+(Intercept) & $6.165^{**}$ & $5.468^{**}$  \\
+            & $(2.098)$             & $(1.863)$              \\
+\textbf{Financialization}      & $\mathbf{-0.422}^{*}$ & $\mathbf{-0.514}^{**}$ \\
+            & $(0.204)$             & $(0.178)$              \\
+\textbf{Performance Gap}    & $0.197$               & $0.088$                \\
+            & $(0.253)$             & $(0.222)$              \\
+\textbf{Volatility}        & $\mathbf{1.517}^{*}$  & $\mathbf{1.557}^{**}$  \\
+            & $(0.635)$             & $(0.570)$              \\
+\textbf{Generosity}    & $\mathbf{1.556}^{**}$ & $\mathbf{1.895}^{***}$ \\
+            & $(0.566)$             & $(0.523)$              \\
+\textbf{Public Debt}     & $\mathbf{0.275}^{*}$  & $\mathbf{0.342}^{**}$  \\
+            & $(0.116)$             & $(0.101)$              \\
+\textbf{Interest Cost}    & $\mathbf{-0.416}^{*}$ & $\mathbf{-0.509}^{**}$ \\
+            & $(0.200)$             & $(0.176)$              \\
+\textbf{Demographics} & $0.010$               & $-0.082$               \\
+            & $(0.180)$             & $(0.333)$              \\
+\hline
+R$^2$       & 0.207                 & 0.298                  \\
+Adj. R$^2$  & 0.140                 & 0.236                  \\
+Num. obs.   & 92                    & 87                     \\
+RMSE        & 0.883                 & 0.753                  \\
+\multicolumn{2}{l}{$^{***}p<0.001$, $^{**}p<0.01$, $^{*}p<0.05$} \\
+\end{tabular}
+\end{center}
+\end{tiny}
+\end{table}
+\end{frame}
+	
+
+\begin{frame}{\textmd{Preliminary Conclusions}}
+\begin{itemize}
+	\item Limited evidence that financialization has driven outcomes
+	\item Effects of prior promises are a larger driver than basic demographics
+	\item Endpoint dependence and volatile markets introduce significant potential for disruption
+\end{itemize}
+	
+\end{frame}
+
+
+\end{document}
